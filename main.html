@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Taskinator</title>
+      <link rel="stylesheet" href="style.css" />
+      <!-- Google's Roboto sans-serif font import -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <!-- Wrapping box -->
+      <section class="container">
+         <header>
+            <h1>My to do list</h1>
+         </header>
+         <!-- this is to enter in a todo -->
+         <form>
+            <input
+               name="task"
+               type="text"
+               placeholder="Add new task like: 'buy milk'.."
+            />
+            <button type="submit">add</button>
+         </form>
+         <!-- this is to keep the list of todos -->
+         <div class="list">
+            <ul></ul>
+         </div>
+      </section>
+      <!--End of Wrapping box -->
+
+      <script src="app.js"></script>
+      <script src="app-testing.js"></script>
+
+      <!-- delete button import form fontawsome -->
+      <script
+         src="https://kit.fontawesome.com/1327d81e56.js"
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>
