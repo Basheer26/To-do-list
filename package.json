@@ -5,7 +5,7 @@
    "main": "app-testing.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start" : "node server.js" 
+      "start": "node server.js"
    },
    "repository": {
       "type": "git",
@@ -15,9 +15,6 @@
    "license": "ISC",
    "bugs": {
       "url": "https://github.com/WebAhead6/To-do-list/issues"
-   },
-   "engines": {
-      "node": "v14.6.0"
    },
    "homepage": "https://github.com/WebAhead6/To-do-list#readme"
 }
