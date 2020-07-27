@@ -1,3 +1,35 @@
+// testing functions //
+function test(name, testFunction) {
+   // EQUAL
+   function equal(x, y, message = `Expected ${x} to equal ${y}`) {
+      if (x === y) {
+         console.info("Pass: " + message);
+      } else {
+         console.error("Fail: " + message);
+      }
+   }
+   // NOT EQUAL
+   function notEqual(x, y, message = `Expected ${x} not to equal ${y}`) {
+      if (x !== y) {
+         console.info("Pass: " + message);
+      } else {
+         console.error("Fail: " + message);
+      }
+   }
+   const assertions = {
+      equal,
+      notEqual,
+   };
+   console.group(name);
+   testFunction(assertions);
+   console.groupEnd(name);
+}
+
+// trim white spaces
+function trimSpaces(text) {
+   return text.trim();
+}
+
 // trimming extra space
 test("can trim spaces on the sides", (t) => {
    t.equal(trimSpaces("  to do app     "), "to do app");

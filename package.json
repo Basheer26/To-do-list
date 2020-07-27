@@ -1,0 +1,23 @@
+{
+   "name": "to-do-list",
+   "version": "1.0.0",
+   "description": "simple to do list",
+   "main": "app-testing.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start" : "node server.js" 
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/WebAhead6/To-do-list.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/WebAhead6/To-do-list/issues"
+   },
+   "engines": {
+      "node": "v14.6.0"
+   },
+   "homepage": "https://github.com/WebAhead6/To-do-list#readme"
+}

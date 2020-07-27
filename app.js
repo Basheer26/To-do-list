@@ -4,38 +4,6 @@
 const input = document.querySelector("input");
 const getTask = document.querySelector("form");
 
-// testing functions //
-function test(name, testFunction) {
-   // EQUAL
-   function equal(x, y, message = `Expected ${x} to equal ${y}`) {
-      if (x === y) {
-         console.info("Pass: " + message);
-      } else {
-         console.error("Fail: " + message);
-      }
-   }
-   // NOT EQUAL
-   function notEqual(x, y, message = `Expected ${x} not to equal ${y}`) {
-      if (x !== y) {
-         console.info("Pass: " + message);
-      } else {
-         console.error("Fail: " + message);
-      }
-   }
-   const assertions = {
-      equal,
-      notEqual,
-   };
-   console.group(name);
-   testFunction(assertions);
-   console.groupEnd(name);
-}
-
-// trim white spaces
-function trimSpaces(text) {
-   return text.trim();
-}
-
 // submit and not "click"
 getTask.addEventListener("submit", handleSubmit);
 
@@ -56,10 +24,8 @@ function addTask(task) {
    console.log("tal3a adding task");
    const ulTask = document.querySelector("ul");
    const TaskText = document.createElement("span");
-   // TaskLi add event listener to this to tackle the strikethrough all element bug
    const TaskLi = document.createElement("li");
    TaskText.textContent = task;
-   // add the delete icon image
    const DelIcon = document.createElement("i");
    DelIcon.setAttribute("class", "far fa-trash-alt");
    //<i class="far fa-trash-alt"></i>     // icon
