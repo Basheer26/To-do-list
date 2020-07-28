@@ -12,7 +12,6 @@ function publicHandler(request, response) {
    const urlArray = request.url.split("."); // e.g. "/style.css" -> ["/style", "css"]
    const extension = urlArray[1]; // e.g. "css"
    const type = types[extension]; // e.g. "text/css"
-   console.log(filePath);
    // __dirname starts from this point where the file is saved.  || __dirname with ..  directs to  "workshop" file
    const filePath = path.join(__dirname, "..", request.url); // e.g /puclic/style.css which means: we return back two steps to the "workshop" file which contains the  /puclic/style.css
    console.log(filePath);
